@@ -1,0 +1,5 @@
+{
+  "item.voxmagic.magic_book": "Magic Book",
+  "item.voxmagic.magic_book.tooltip": "Hold in either hand to cast voice spells",
+  "text.voxmagic.magic_book.guide": "Key phrases:\nLightning\nGhost\nWeb\nHeal\nWall\nFire\nSlime\nDome\nShockwave\nLevitate\nMeteor\nPush\nTeleport\nPull"
+}

@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+    "id": "voxmagic",
+	"version": "${version}",
+	"name": "VoxMagic",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/voxmagic/icon.png",
+	"environment": "*",
+    "entrypoints": {
+        "main": [
+            "com.voxmagic.VoxMagicMode"
+        ],
+        "client": [
+            "com.voxmagic.client.VoxMagicModeClient"
+        ]
+    },
+	"mixins": [
+		"voxmagic.mixins.json",
+		{
+			"config": "voxmagic.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
